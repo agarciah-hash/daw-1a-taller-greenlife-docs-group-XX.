@@ -84,3 +84,30 @@ Un tag és una referència fixa i immutable a un commit concret (per exemple v1.
 > Com veus tots els tags del repositori?
 
 git tag
+---
+
+## Exercici 6
+
+> Per què és útil vincular commits amb issues (`Fixes #1`)?
+
+Vincular els commits amb les issues utilitzant paraules clau com `Fixes #1`, `Closes #1` o `Resolves #1` millora el flux de treball:
+
+* **Tancament automàtic:** En fer el *merge* de la branca a la branca principal (`main`), GitHub tanca la issue automàticament sense haver de fer-ho manualment.
+* **Traçabilitat:** Permet saber quin codi exacte (quins commits) ha resolt un problema o implementat una funcionalitat concreta.
+* **Historial clar:** La pàgina de la issue mostra tot el registre de canvis relacionats, facilitant la consulta futura.
+
+> Com es veuen els issues tancats a GitHub?
+
+Els issues tancats es distingeixen pels següents elements a la interfície de GitHub:
+
+* **Icona i color:** L'estat canvia de verd (obert) a un **color lila/violeta** amb la icona de tancat o *completed*.
+* **Filtres de llista:** Es traslladen de la pestanya **Open** a la pestanya **Closed** en el llistat d'issues del repositori.
+* **Historial i referència:** Al final de la conversa de la issue apareix una línia de temps que indica quin *commit* o *Pull Request* va provocar el seu tancament i qui ho va executar.
+
+> Què passaria si dos desenvolupadors treballen en el mateix issue?
+
+Si dos membres de l'equip treballen en el mateix issue de manera independent:
+
+* **Duplicitat d'esforç:** Ambdós estaran resolent el mateix problema, la qual cosa suposa una pèrdua de temps per al projecte.
+* **Conflictes de fusió (*Merge Conflicts*):** En intentar fusionar les dues branques a `main`, Git detectarà canvis coincidents en els mateixos fitxers i bloquejarà el merge fins que es resolguin els conflictes manualment.
+* **Coordinació necessària:** Per evitar-ho, és una bona pràctica assignar la issue a un sol desenvolupador (*Assignee*) abans de començar a escriure codi.
