@@ -1,5 +1,4 @@
 # GreenLife - Gestor de consum energètic 
-
 ## Descripció
 Aplicació per monitoritzar i optimitzar el consum energètic de llars i empreses.
 
