@@ -43,7 +43,7 @@ Evita confusions: Impedeix que algú pensi que encara hi ha feina pendent en aqu
 Bones pràctiques: És l'estàndard en fluxos de treball com Git Flow. Un cop la feina està a main, la branca temporal ja no serveix per a res.
 ---
 
-## Exercici 3
+##Exercici 3
 > Per què s'ha produït el conflicte?
 
 Perquè l'Anna i en Bernat han modificat el mateix fitxer (README.md) alhora partint d'una base comuna. Quan l'Anna ha pujat els seus canvis a main, la branca del Bernat s'ha quedat desactualitzada i Git no sap quina de les dues versions noves ha de prevaler.
