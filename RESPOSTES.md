@@ -55,6 +55,9 @@ Actualitzant la branca de treball amb git pull origin main (o fent un git rebase
 > Què passaria si haguessin modificat la mateixa línia exactament?
 
 Passaria el mateix (conflicte), però en lloc de veure les dues seccions senceres, el conflicte estaria dins de la mateixa línia. A l'hora de resoldre'l, no podries mantenir les dues opcions per separat; hauries d'escollir-ne una o inventar-te una línia nova que combini el text
+---
+
+## Exercici 4
 
 > Diferència entre git revert i git reset?
 
@@ -66,4 +69,18 @@ git reset: reescriu l'historial movent el punter enrere i descartant commits. Pe
 Només quan ningú altre ha estirat ni treballat en aquesta branca. En equips, millor usar --force-with-lease o evitar-ho.
 
 > Com recuperaries un canvi revertit?
-Fent git revert del commit de reversió (o git cherry-pick del commit original
+Fent git revert del commit de reversió (o git cherry-pick del commit original)
+---
+
+## Exercici 5
+> Per què és útil tenir branques de release?
+
+Permeten estabilitzar una versió (proves finals, correccions d'última hora, ajustos de versió) sense afectar el desenvolupament continu de main. Així l'equip pot seguir afegint funcionalitats noves mentre es prepara el llançament, i un cop llesta, es fusiona a main i s'etiqueta.
+
+> Què és un tag i per què és important?
+
+Un tag és una referència fixa i immutable a un commit concret (per exemple v1.0). És important perquè marca de manera permanent un punt de llançament, facilita la traçabilitat de versions, permet revertir o consultar exactament què es va publicar, i no es mou com les branques.
+
+> Com veus tots els tags del repositori?
+
+git tag
