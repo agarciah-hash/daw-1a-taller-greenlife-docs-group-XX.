@@ -55,3 +55,15 @@ Actualitzant la branca de treball amb git pull origin main (o fent un git rebase
 > Què passaria si haguessin modificat la mateixa línia exactament?
 
 Passaria el mateix (conflicte), però en lloc de veure les dues seccions senceres, el conflicte estaria dins de la mateixa línia. A l'hora de resoldre'l, no podries mantenir les dues opcions per separat; hauries d'escollir-ne una o inventar-te una línia nova que combini el text
+
+> Diferència entre git revert i git reset?
+
+git revert: no reescriu l'historial, crea un nou commit que desfà els canvis. Segur en branques públiques.
+
+git reset: reescriu l'historial movent el punter enrere i descartant commits. Perillós si ja s'ha publicat.
+
+> Quan és segur fer git push --force?
+Només quan ningú altre ha estirat ni treballat en aquesta branca. En equips, millor usar --force-with-lease o evitar-ho.
+
+> Com recuperaries un canvi revertit?
+Fent git revert del commit de reversió (o git cherry-pick del commit original
