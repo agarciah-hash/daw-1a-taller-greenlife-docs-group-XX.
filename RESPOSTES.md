@@ -1,3 +1,4 @@
+## Exercici 1
 > Quantes branques hi ha ara al repositori?
 
 **Branques locals:**
@@ -19,7 +20,9 @@ Amb la comanda de git branch -r
 
 git diff Anna
 
+---
 
+## Exercici 2
 > Què passa amb les branques feature/faq i feature/api-reference després del merge?
 
 Un cop fusionades a main, les branques continuen existint tant en local com al remot. El merge no les esborra automàticament. GitHub ofereix un botó opcional per esborrar-les just després de fer el merge, però si no el cliques, es queden al repositori com a branques antigues que ja no tenen canvis respecte a main.
