@@ -1,18 +1,3 @@
-# GreenLife - Gestor de consum energètic
-
-## Descripció
-Aplicació per monitoritzar i optimitzar el consum energètic de llars i empreses.
-
-
-## Estat del projecte
-🚧 En desenvolupament
-
-
-## Enllaços
-- [Manual d'usuari](docs/manual_usuari.md)
-- [Manual tècnic](docs/manual_tecnic.md)
-- [Guia d'instal·lació](docs/guia_instalacio.md)
-
 ## 🛠️ Tecnologies
 ### Backend
 - Node.js
@@ -24,4 +9,12 @@ Aplicació per monitoritzar i optimitzar el consum energètic de llars i emprese
 - PostgreSQL
 - Prisma ORM
 
-echo "Aquesta línia és de la branca MAIN." >> README.md
+
+## 👥 Equip
+### Product Owner
+- Maria García
+### Scrum Master
+- Jordi Ferrer
+### Equip de desenvolupament
+- Anna Martínez
+- Bernat Puig
