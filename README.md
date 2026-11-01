@@ -1,6 +1,5 @@
 # GreenLife - Gestor de consum energètic
 
-
 ## Descripció
 Aplicació per monitoritzar i optimitzar el consum energètic de llars i empreses.
 
@@ -24,3 +23,5 @@ Aplicació per monitoritzar i optimitzar el consum energètic de llars i emprese
 ### Base de dades
 - PostgreSQL
 - Prisma ORM
+
+echo "Aquesta línia és de la branca MAIN." >> README.md
