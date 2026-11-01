@@ -33,3 +33,9 @@ Aplicació per monitoritzar i optimitzar el consum energètic de llars i emprese
 ### Equip de desenvolupament
 - Anna Martínez
 - Bernat Puig
+
+## 🤝 Com contribuir
+1. Fer un fork del repositori
+2. Crear una branca per a la teva feature
+3. Fer commit dels teus canvis
+4. Crear una Pull Request
