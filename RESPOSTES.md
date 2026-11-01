@@ -84,6 +84,7 @@ Un tag és una referència fixa i immutable a un commit concret (per exemple v1.
 > Com veus tots els tags del repositori?
 
 git tag
+
 ---
 
 ## Exercici 6
