@@ -41,4 +41,17 @@ Neteja i claredat: Evita tenir un llistat de branques ple de noms de feines ja a
 Evita confusions: Impedeix que algú pensi que encara hi ha feina pendent en aquella branca i faci canvis per error.
 
 Bones pràctiques: És l'estàndard en fluxos de treball com Git Flow. Un cop la feina està a main, la branca temporal ja no serveix per a res.
+---
 
+##Exercici 3
+> Per què s'ha produït el conflicte?
+
+Perquè l'Anna i en Bernat han modificat el mateix fitxer (README.md) alhora partint d'una base comuna. Quan l'Anna ha pujat els seus canvis a main, la branca del Bernat s'ha quedat desactualitzada i Git no sap quina de les dues versions noves ha de prevaler.
+
+> Com es podria haver evitat?
+
+Actualitzant la branca de treball amb git pull origin main (o fent un git rebase) just abans de fer el merge. També evitant que dues persones toquin el mateix fitxer alhora (per exemple, creant fitxers separats).
+
+> Què passaria si haguessin modificat la mateixa línia exactament?
+
+Passaria el mateix (conflicte), però en lloc de veure les dues seccions senceres, el conflicte estaria dins de la mateixa línia. A l'hora de resoldre'l, no podries mantenir les dues opcions per separat; hauries d'escollir-ne una o inventar-te una línia nova que combini el text
